@@ -1,0 +1,90 @@
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
+  background: #0b0e11;
+  color: #eaecef;
+}
+
+.header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #1f2329;
+}
+.header h1 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+}
+.row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.label {
+  opacity: 0.7;
+}
+.input {
+  background: #0f1318;
+  color: #eaecef;
+  border: 1px solid #1f2329;
+  border-radius: 8px;
+  padding: 6px 10px;
+  outline: none;
+  width: 140px;
+}
+.badge {
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  border: 1px solid #2a2f36;
+  background: #0f1318;
+  text-transform: capitalize;
+}
+.badge[data-status="connected"] { border-color: #2e7d32; }
+.badge[data-status="connecting"] { border-color: #947100; }
+.badge[data-status="disconnected"] { border-color: #9e2a2a; }
+.error {
+  margin-left: 8px;
+  color: #ff6b6b;
+  font-size: 12px;
+}
+.meta {
+  margin-top: 6px;
+  opacity: 0.7;
+  font-size: 12px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12px;
+  padding: 12px 20px;
+}
+
+.orderbook {
+  background: #0f1318;
+  border: 1px solid #1f2329;
+  border-radius: 12px;
+  padding: 12px;
+}
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 140px 1fr;
+  gap: 12px;
+  align-items: start;
+}
+.spreadCol {
+  text-align: center;
+}
+
+.trades {
+  background: #0f1318;
+  border: 1px solid #1f2329;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.footer {
+  padding: 8px 20px 16px;
+  opacity: 0.7;
+  font-size: 12px;
+}
