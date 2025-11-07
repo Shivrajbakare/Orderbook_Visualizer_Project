@@ -1,0 +1,39 @@
+.tickerWrapper {
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+  border-top: 1px solid #222;
+  color: white;
+  padding: 4px 0;
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: monospace;
+}
+
+.ticker {
+  display: flex;
+  gap: 30px;
+  padding-left: 10px;
+  animation: scroll 30s linear infinite;
+}
+
+.item {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.green {
+  background-color: rgba(0,255,0,0.1);
+  color: #22ff22;
+}
+
+.red {
+  background-color: rgba(255,0,0,0.1);
+  color: #ff4343;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
